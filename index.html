@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- ===============================HEADER SECTION========================== -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <b>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="#">Services</a></li> -->
+                        <!-- <li><a href="#">Portfolio</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </b>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, My name is 
+                    <span style="display: inline-blocK;">Kunal </span>
+                </h1>
+                <!-- <i class="fa-solid fa-code"></i>  -->
+                <h3>
+                   and I am a passionate <br>
+                   <span id="element"></span>
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/kc1.JPG" alt="">
+
+                </div>
+
+                <!-- =========================ABOUT SECTION================================ -->
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a front end developer who loves to create websites as well as designing for people. I have
+                        been many projects are designing, developing and maintaining of front-end web applications.
+                        Technology using by of HTML, CSS, and JavaScript for a website or web application to make the
+                        data user
+                        friendly.I love to work in groups where everyone can voice their opinions and ideas.I'm
+                        passionate about creating great user
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <!-- =======================SKILL SECTION=========================         -->
+
+                    <div class="tab-contains active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Front-End Developer</b></span><br>Designing Web/App Interfaces <br>(HTML 5, CSS
+                                3,
+                                JavaScript, React.Js)</li>
+                            <li><span><b>Web Development</b></span><br> Developing Web Applications <br>HTML 5, CSS 3,
+                                JavaScript,(Pyhton, Django, MySQL,
+                                )</li>
+                            <li><span><b>Mearn Stack Development</b></span><br>Designing and Developing Mearn Stack Web
+                                Applications <br>(MongoDB, Express.JS, React.JS, Node.JS)</li>
+                        </ul>
+                    </div>
+
+                    <!-- ==========================EDUCATION SECTION======================= -->
+
+                    <div class="tab-contains" id="education">
+                        <ul>
+                            <li><span>2023</span><br> Bachelor of Computer
+                                Applications (BCA)
+                                Institute of Management Research &
+                                Development, Shahada (North Maharashtra
+                                University of Jalgaon).</li>
+                            <li><span>2019</span><br>HSC 12th
+                                J.G Natawadkar Junior College, Nandurbar</li>
+                            <li><span>2017</span><br>SSC
+                                Eklavya Vidyalaya , Nandurbar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================CONTACT SECTION==================== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title social-icons" style="color: rgb(0, 0, 0);">Contact Me</h1>
+                    <p> <i  class="fa-regular fa-envelope"></i>kunalchaudhari0599@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>9583059999</p>
+
+            <!-- ================================SOCIAL ICONS=============================== -->
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kunal.chaudhari.988711?mibextid=ZbWKwL "><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=1qhcuhcyv264j&utm_content=3442u5o "><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a
+                            href="https://www.linkedin.com/in/kunal-chaudhari-7174a7290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                <!-- ==================================RESUME AND MESSAGE SECTION==================================== -->
+
+                    <a href="images/mycv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+
+        <!-- ======================COPYRIGHT SECTION==================== -->
+
+        <div class="copyright">
+            <p>copyright © Made with <i class="fa-solid fa-heart"></i> Kunal Chaudhari.</p>
+        </div>
+    </div>
+
+        <!-- =====================================JAVASCRIPT SECTION=================================== -->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontains = document.getElementsByClassName("tab-contains");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontain of tabcontains) {
+                tabcontain.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxYvIJnJp4r6SGFXwYAO-rEQKiJmqj2z_v0_XMMmjGdDLROyPGQLeMT9pVRk2Lcu1vx/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+ <!-- Setup and start animation! -->
+ <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Designer', 'Softwere Developer','React Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
+
+</body>
+
+</html>
